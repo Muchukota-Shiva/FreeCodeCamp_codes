@@ -1,0 +1,1 @@
+const myList = [["shiva",1],["avihs",-1],["s",0],["nword",100],["M",-1]];
