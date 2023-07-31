@@ -1,0 +1,13 @@
+//let lst = [];
+function rangeOfNumbers(startNum, endNum) {
+  if(endNum<startNum)
+  {
+    return [];
+  }
+  else
+  {
+    const n = rangeOfNumbers(startNum,endNum-1);
+    n.push(endNum);
+    return n;
+  }
+};
