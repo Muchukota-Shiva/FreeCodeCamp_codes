@@ -1,0 +1,16 @@
+function confirmEnding(str, target) 
+{
+  /* let en=target[0];
+  let en_last=target[target.length];
+
+  for(let i=0; i<str.length; i++)
+  {
+    if(str[i]==en)
+    {
+
+    }
+  } */
+  return str.slice(str.length-target.length)===target;
+}
+
+confirmEnding("Bastian", "n");
