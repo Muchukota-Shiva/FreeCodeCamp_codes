@@ -1,0 +1,16 @@
+function mutation(arr) 
+{
+  let x=arr[1].toLowerCase();
+  let y=arr[0].toLowerCase();
+
+  for(let i=0; i<x.length;i++)
+  {
+    if(y.indexOf(x[i])===-1)
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
+mutation(["hello", "hey"]);
