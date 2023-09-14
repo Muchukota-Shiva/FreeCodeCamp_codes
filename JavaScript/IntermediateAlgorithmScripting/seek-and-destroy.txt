@@ -1,0 +1,8 @@
+function destroyer(arr, ...rem) {
+  //let newArr =[];
+  return arr.
+  filter(ele => rem.includes(ele)==false);
+}
+
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
