@@ -1,0 +1,22 @@
+function translatePigLatin(str) {
+  var result = "";
+  var reg = /[aeiou]/gi;
+
+  if(str[0].match(reg))
+  {
+    result=str+"way";
+  }
+  else if(str.match(reg)===null)
+  {
+    result=str+"ay";
+  }
+  else
+  {
+    var index=str.indexOf(str.match(reg)[0]);
+    result=str.substr(index) + str.substr(0,index)+"ay";
+  }
+
+  return result;
+}
+
+translatePigLatin("consonant");
