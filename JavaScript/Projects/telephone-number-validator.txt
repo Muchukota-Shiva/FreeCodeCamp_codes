@@ -1,0 +1,31 @@
+function telephoneCheck(str) 
+{
+  const regexWithAlphabets = /^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{4}$/;
+
+    return regexWithAlphabets.test(str);
+}
+
+telephoneCheck("555-555-5555");
+
+/*
+
+ok here is how i did it
+^: Asserts the start of the string.
+
+(1\s?)? This part is an optional group at the beginning. It allows for an optional "1" followed by an optional space. This is a common format for including the country code.
+
+(\(\d{3}\)|\d{3}) This part represents the area code. It allows for either:
+
+\(\d{3}\) Three digits enclosed in parentheses, or
+\d{3} Simply three digits without parentheses.
+[\s\-]? This part allows for an optional space (\s) or hyphen (\-). This is used to account for optional separators between different parts of the phone number.
+
+\d{3 Represents the next three digits of the phone number, typically the exchange code.
+
+[\s\-]? Another optional space or hyphen.
+
+\d{4} Represents the final four digits of the phone number.
+
+$ Asserts the end of the string.
+
+*/
