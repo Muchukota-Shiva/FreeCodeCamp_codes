@@ -1,0 +1,9 @@
+const JSX= <div>
+<h1>hello</h1>
+<p>this is some stuff i guess</p>
+<ul>
+<li>point to be noted</li>
+<li>another point to be noted</li>
+<li>ignore this one</li>
+</ul>
+</div>
