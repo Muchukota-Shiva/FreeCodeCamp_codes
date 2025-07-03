@@ -20,8 +20,8 @@
       - weight is more than the 97.5th percentile
 
 * output graphs
-<img src="catplot.png", style="width: 300px; height: 200px;">
-<img src="heatmap.png", style="width: 300px; height: 200px;">
+<img src="catplot.png">
+<img src="heatmap.png">
 
 Used Python
 
